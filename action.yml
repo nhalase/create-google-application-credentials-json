@@ -1,0 +1,12 @@
+name: 'Create GOOGLE_APPLICATION_CREDENTIALS.json'
+description: 'Writes the value of the GAC input to GOOGLE_APPLICATION_CREDENTIALS.json in the GitHub runner temp dir'
+inputs:
+  GOOGLE_APPLICATION_CREDENTIALS:
+    description: 'The GOOGLE_APPLICATION_CREDENTIALS to write to a file'
+    required: true
+outputs:
+  GOOGLE_APPLICATION_CREDENTIALS_JSON:
+    description: 'The GOOGLE_APPLICATION_CREDENTIALS.json file'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

@@ -1,0 +1,29 @@
+{
+  "name": "create-google-application-credentials-json",
+  "version": "1.0.0",
+  "description": "This action writes a `GOOGLE_APPLICATION_CREDENTIALS` value to a temp .json file.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build index.js --license LICENSE"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhalase/create-google-application-credentials-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nhalase/create-google-application-credentials-json/issues"
+  },
+  "homepage": "https://github.com/nhalase/create-google-application-credentials-json#readme",
+  "dependencies": {
+    "@actions/core": "^1.7.0",
+    "@actions/github": "^5.0.1",
+    "@actions/io": "^1.1.2"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.4"
+  }
+}
